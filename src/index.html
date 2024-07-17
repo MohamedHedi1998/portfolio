@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mohamed Hedi AYADI | FullStack Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/main.bundle.css" />
+        <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+        <script>
+            let lang = window.localStorage.getItem("lang") ?? "en";
+            const data = {
+                cv: {
+                    en: "Resume",
+                    fr: "CV",
+                },
+                title: {
+                    en: "FullStack Developer",
+                    fr: "Développeur Full Stack",
+                },
+                title1: {
+                    en: "FullStack Developer",
+                    fr: "Développeur Full Stack",
+                },
+                about: {
+                    en: "About Me",
+                    fr: "À propos de moi",
+                },
+                "about-para": {
+                    en: "Frontend experience with React.js and Next.js. Skilled in backend development using Node.js and Express.js focusing on developing scalable and secure APIs. Comfortable working with various databases like MongoDB, Mysql and MariaDB. Possesses practical knowledge of containerization and orchestration tools like Docker and Kubernetes for streamlined deployments. Understands and can implement CI/CD practices using GitLab CI for efficient development workflows. Actively learning and expanding skill set.",
+                    fr: "Expérience frontend avec React.js et Next.js. Compétent dans le développement backend à l'aide de Node.js et Express.js, en se concentrant sur le développement d'API évolutives et sécurisées. À l'aise avec diverses bases de données comme MongoDB, Mysql et MariaDB. Possède une connaissance pratique des outils de conteneurisation et d'orchestration tels que Docker et Kubernetes pour des déploiements rationalisés. Comprend et peut mettre en œuvre les pratiques CI/CD à l’aide de GitLab CI pour des flux de travail de développement efficaces. Apprendre activement et développer ses compétences.",
+                },
+                experience: {
+                    en: "Experience",
+                    fr: "Expérience",
+                },
+                december: {
+                    en: "December",
+                    fr: "Décembre",
+                },
+                present: {
+                    en: "Present",
+                    fr: "Présent",
+                },
+                "job-para": {
+                    en: "Play a dynamic role within a cross-functional development team, contributing to the creation of Manufacturing Execution System (MES) solutions for various clients, using a multi-service architecture.",
+                    fr: "Jouer un rôle dynamique au sein d'une équipe de développement interfonctionnelle, en contribuant à la création de solutions Manufacturing Execution System (MES) pour divers clients, en utilisant une architecture multiservice.",
+                },
+                key: {
+                    en: "Key contributions:",
+                    fr: "Contributions clés:",
+                },
+                li1: {
+                    en: "Developed React.js interfaces for seamless user experiences.",
+                    fr: "Développement d'interfaces React.js pour des expériences utilisateur transparentes.",
+                },
+                li2: {
+                    en: "Implemented scalable backend microservices with Node.js, Express.js, MongoDB, MySQL, and RESTful APIs.",
+                    fr: "Implémentation de microservices backend évolutifs avec les API Node.js, Express.js, MongoDB, MySQL et RESTful.",
+                },
+                li3: {
+                    en: "Secured authentication using JSON Web Tokens (JWT).",
+                    fr: "Authentification sécurisée à l'aide de jetons Web JSON (JWT).",
+                },
+                li4: {
+                    en: "Utilized Docker, Kubernetes, and GitLab CI for efficient deployment and automation.",
+                    fr: "Utilisation de Docker, Kubernetes et GitLab CI pour un déploiement et une automatisation efficaces.",
+                },
+                li5: {
+                    en: "Conducted comprehensive testing with Jest and Supertest.",
+                    fr: "Réalisation de tests complets avec Jest et Supertest.",
+                },
+                li6: {
+                    en: "Employed Prisma ORM for optimized data manipulation and querying.",
+                    fr: "Utilisation de Prisma ORM pour une manipulation et des requêtes optimisées des données.",
+                },
+                li7: {
+                    en: "Used OPC UA communication protocol to get data from PLC and used it to calculate KPIs and other indicators.",
+                    fr: "Utilisation du protocole de communication OPC UA pour obtenir des données du PLC et l'utiliser pour calculer des KPI et d'autres indicateurs.",
+                },
+                c: {
+                    en: "C Programming Language",
+                    fr: "Langage de programmation C",
+                },
+                c1: {
+                    en: "C Programming Language",
+                    fr: "Langage de programmation C",
+                },
+                projects: {
+                    en: "Projects",
+                    fr: "Projets",
+                },
+                andon: {
+                    en: "Andon post",
+                    fr: "Poste andon",
+                },
+                andon1: {
+                    en: "Andon post",
+                    fr: "Poste andon",
+                },
+                website: {
+                    en: "Website",
+                    fr: "Site web",
+                },
+                website1: {
+                    en: "Website",
+                    fr: "Site web",
+                },
+                website2: {
+                    en: "Website",
+                    fr: "Site web",
+                },
+                education: {
+                    en: "Education",
+                    fr: "Éducation",
+                },
+                iset: {
+                    en: "Higher Institute of Technological Studies of Radès",
+                    fr: "Institut Supérieur des Études Technologiques de Radès",
+                },
+                license: {
+                    en: "Bachelor's degree in Mechatronics",
+                    fr: "License appliquée en génie mécatronique",
+                },
+                lycee: {
+                    en: "High School of El Mourouj 6",
+                    fr: "Lycée secondaire El Mourouj 6",
+                },
+                bac: {
+                    en: "Technological baccalaureate",
+                    fr: "Baccalauréat technologique",
+                },
+                mes: {
+                    en: "Our advanced Manufacturing Execution System (MES) is designed to enhance productivity and optimize the manufacturing process through real-time data integration. It continuously monitors machine performance, work, and stop times, automatically calculating and tracking Key Performance Indicators (KPIs), throughput, and downtime. The system maintains a detailed history of production activities, ensuring traceability and compliance, while providing predictive maintenance insights through machine performance analysis. The MES features three user interfaces: an admin interface for system configuration and detailed reporting, an operator interface for real-time monitoring and task management, and an Andon post interface for visual communication of production status and issues. This comprehensive MES solution ensures efficient and transparent manufacturing operations, empowering data-driven decision-making and fostering rapid response to production challenges.",
+                    fr: "Notre système avancé d'exécution de fabrication (MES) est conçu pour améliorer la productivité et optimiser le processus de fabrication grâce à l'intégration de données en temps réel. Il surveille en permanence les performances de la machine, les temps de travail et d'arrêt, calculant et suivant automatiquement les indicateurs de performance clés (KPI), le débit et les temps d'arrêt. Le système conserve un historique détaillé des activités de production, garantissant la traçabilité et la conformité, tout en fournissant des informations de maintenance prédictive grâce à l'analyse des performances des machines. Le MES comprend trois interfaces utilisateur : une interface d'administration pour la configuration du système et les rapports détaillés, une interface opérateur pour la surveillance et la gestion des tâches en temps réel, et une interface de publication Andon pour la communication visuelle de l'état et des problèmes de production. Cette solution MES complète garantit des opérations de fabrication efficaces et transparentes, permettant une prise de décision basée sur les données et favorisant une réponse rapide aux défis de production.",
+                },
+                "andon-para": {
+                    en: "The Andon post interface within our Manufacturing Execution System (MES) serves as a critical communication tool, providing immediate visual updates on production status and issues. It displays real-time information on machine performance, production progress, and any alarms or stoppages, enabling rapid identification and resolution of problems. This interface promotes transparency and teamwork by ensuring that all team members are aware of the current state of production. With its clear and visible alerts, the Andon post enhances responsiveness and helps maintain smooth and efficient operations, ultimately contributing to improved productivity and reduced downtime.",
+                    fr: "L'interface de publication Andon au sein de notre système d'exécution de fabrication (MES) sert d'outil de communication essentiel, fournissant des mises à jour visuelles immédiates sur l'état et les problèmes de production. Il affiche des informations en temps réel sur les performances de la machine, la progression de la production et toute alarme ou arrêt, permettant une identification et une résolution rapides des problèmes. Cette interface favorise la transparence et le travail d'équipe en garantissant que tous les membres de l'équipe sont au courant de l'état actuel de la production. Avec ses alertes claires et visibles, le poste Andon améliore la réactivité et aide à maintenir des opérations fluides et efficaces, contribuant ainsi à améliorer la productivité et à réduire les temps d'arrêt.",
+                },
+                "pda-para": {
+                    en: "The Personal Digital Assistant (PDA) plays a crucial role in our manufacturing operations by facilitating the efficient preparation of raw materials for fabrication orders. Integrated seamlessly with our production management system, the PDA enables operators to access detailed instructions and specifications directly on handheld devices. Operators can verify inventory levels, retrieve material specifications, and initiate material handling processes such as picking, packing, and staging. This mobile capability ensures that materials are prepared accurately and efficiently, reducing lead times and minimizing errors. By leveraging the PDA for material preparation, we enhance operational agility, streamline workflows, and maintain high standards of production efficiency and quality.",
+                    fr: "L'assistant numérique personnel (PDA) joue un rôle crucial dans nos opérations de fabrication en facilitant la préparation efficace des matières premières pour les commandes de fabrication. Intégré de manière transparente à notre système de gestion de production, le PDA permet aux opérateurs d'accéder à des instructions et spécifications détaillées directement sur des appareils portables. Les opérateurs peuvent vérifier les niveaux de stock, récupérer les spécifications des matériaux et lancer des processus de manutention tels que le prélèvement, l'emballage et la préparation. Cette capacité mobile garantit que les matériaux sont préparés avec précision et efficacité, réduisant ainsi les délais et minimisant les erreurs. En tirant parti du PDA pour la préparation des matériaux, nous améliorons l’agilité opérationnelle, rationalisons les flux de travail et maintenons des normes élevées d’efficacité et de qualité de production.",
+                },
+                jama: {
+                    en: "Jama E-Commerce Website",
+                    fr: "Site web E-Commerce Jama",
+                },
+                mcarre: {
+                    en: "M-Carré Architecture Website",
+                    fr: "Site M-Carré Architecture",
+                },
+                sdtm: {
+                    en: "SDTM Website",
+                    fr: "Site web SDTM",
+                },
+                close1: {
+                    en: "Close",
+                    fr: "Fermer",
+                },
+                close2: {
+                    en: "Close",
+                    fr: "Fermer",
+                },
+                close3: {
+                    en: "Close",
+                    fr: "Fermer",
+                },
+                close4: {
+                    en: "Close",
+                    fr: "Fermer",
+                },
+                close5: {
+                    en: "Close",
+                    fr: "Fermer",
+                },
+                close6: {
+                    en: "Close",
+                    fr: "Fermer",
+                },
+                demo: {
+                    en: "Live Demo",
+                    fr: "Démo Live",
+                },
+            };
+            const _lang = {
+                en: "Change the language",
+                fr: "Changer la langue",
+            };
+
+            function setData() {
+                for (const key in data) {
+                    document.getElementById(key).innerText = data[key][lang];
+                }
+                document
+                    .getElementById("_lang1")
+                    .setAttribute("title", _lang[lang]);
+                document
+                    .getElementById("_lang2")
+                    .setAttribute("title", _lang[lang]);
+                document
+                    .querySelector("#_lang1 img")
+                    .setAttribute(
+                        "src",
+                        "img/" + (lang == "en" ? "fr" : "en") + ".ico"
+                    );
+                document
+                    .querySelector("#_lang2 img")
+                    .setAttribute(
+                        "src",
+                        "img/" + (lang == "en" ? "fr" : "en") + ".ico"
+                    );
+            }
+
+            function changeLanguage() {
+                if (lang == "fr") lang = "en";
+                else lang = "fr";
+                window.localStorage.setItem("lang", lang);
+                setData();
+            }
+        </script>
+    </head>
+
+    <body>
+        <nav
+            class="navbar is-primary"
+            role="navigation"
+            aria-label="main navigation"
+        >
+            <div class="navbar-brand">
+                <div class="navbar-item is-hidden-desktop">
+                    <a
+                        href="https://github.com/MohamedHedi1998"
+                        class="icon is-large has-text-light"
+                        target="_blank"
+                    >
+                        <i class="fab fa-2x fa-github"></i>
+                    </a>
+                </div>
+                <div class="navbar-item is-hidden-desktop">
+                    <a
+                        href="#"
+                        title="Change the language"
+                        id="_lang1"
+                        onclick="changeLanguage()"
+                        class="icon is-large has-text-light"
+                    >
+                        <img class="fas fa-2x fa-globe" src="img/en.ico" />
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a
+                            href="https://github.com/MohamedHedi1998"
+                            class="icon is-large has-text-light"
+                            target="_blank"
+                        >
+                            <i class="fab fa-2x fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-item">
+                        <a
+                            href="#"
+                            title="Change the language"
+                            id="_lang2"
+                            onclick="changeLanguage()"
+                            class="icon is-large has-text-light"
+                        >
+                            <img class="fas fa-2x fa-globe" src="img/en.ico" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded" src="img/photo.jpg" />
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="columns has-text-centered">
+                        <div class="column">
+                            <h1 class="title is-1">Mohamed Hedi AYADI</h1>
+                            <h2 class="subtitle" id="title">
+                                FullStack Developer
+                            </h2>
+                            <p>
+                                <a
+                                    href="docs/resume.pdf"
+                                    class="icon has-text-light"
+                                    target="_blank"
+                                >
+                                    <i class="fas fa-file-word"></i>
+                                    <strong id="cv">Resume</strong>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="title" id="about">About Me</h1>
+                <hr />
+                <p id="about-para">
+                    Frontend experience with React.js and Next.js. Skilled in
+                    backend development using Node.js and Express.js focusing on
+                    developing scalable and secure APIs. Comfortable working
+                    with various databases like MongoDB, Mysql and MariaDB.
+                    Possesses practical knowledge of containerization and
+                    orchestration tools like Docker and Kubernetes for
+                    streamlined deployments. Understands and can implement CI/CD
+                    practices using GitLab CI for efficient development
+                    workflows. Actively learning and expanding skill set.
+                </p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h1 class="title" id="experience">Experience</h1>
+                <hr />
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img
+                                        src="img/ara.jpeg"
+                                        alt="Placeholder image"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">ARA Consulting</p>
+                                <p class="subtitle is-6">
+                                    <span id="title1">FullStack Developer</span>
+                                    -
+                                    <time datetime="2020-12"
+                                        ><span id="december">December</span>
+                                        2020</time
+                                    >
+                                    -
+                                    <time datetime="now" id="present"
+                                        >Present</time
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p id="job-para">
+                                Play a dynamic role within a cross-functional
+                                development team, contributing to the creation
+                                of Manufacturing Execution System (MES)
+                                solutions for various clients, using a
+                                multi-service architecture.
+                            </p>
+                            <h2 id="key">Key contributions:</h2>
+                            <ul>
+                                <li id="li1">
+                                    Developed React.js interfaces for seamless
+                                    user experiences.
+                                </li>
+                                <li id="li2">
+                                    Implemented scalable backend microservices
+                                    with Node.js, Express.js, MongoDB, MySQL,
+                                    and RESTful APIs.
+                                </li>
+                                <li id="li3">
+                                    Secured authentication using JSON Web Tokens
+                                    (JWT).
+                                </li>
+                                <li id="li4">
+                                    Utilized Docker, Kubernetes, and GitLab CI
+                                    for efficient deployment and automation.
+                                </li>
+                                <li id="li5">
+                                    Conducted comprehensive testing with Jest
+                                    and Supertest.
+                                </li>
+                                <li id="li6">
+                                    Employed Prisma ORM for optimized data
+                                    manipulation and querying.
+                                </li>
+                                <li id="li7">
+                                    Used OPC UA communication protocol to get
+                                    data from PLC and used it to calculate KPIs
+                                    and other indicators.
+                                </li>
+                            </ul>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Javascript</span>
+                                <span class="tag">Typescript</span>
+                                <span class="tag">ReactJS</span>
+                                <span class="tag">NextJS</span>
+                                <span class="tag">NodeJS</span>
+                                <span class="tag">ExpressJS</span>
+                                <span class="tag" id="c"
+                                    >C Programming Language</span
+                                >
+                                <span class="tag">OPC UA</span>
+                                <span class="tag">TailwindCSS</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">MariaDB</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">SCRUM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="title" id="projects">Projects</h1>
+                <hr />
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-12">
+                        <div class="tile">
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <p class="title">MES</p>
+                                    <figure class="image is-3by2">
+                                        <img
+                                            class="modal-trigger"
+                                            data-target="project-1-modal"
+                                            src="img/project1.jpg"
+                                        />
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <p class="title" id="andon">Andon Post</p>
+                                    <figure class="image is-4by3">
+                                        <img
+                                            class="modal-trigger"
+                                            data-target="project-2-modal"
+                                            src="img/andon.jpg"
+                                        />
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <p class="title">PDA</p>
+                                    <figure class="image is-4by3">
+                                        <img
+                                            class="modal-trigger"
+                                            data-target="project-3-modal"
+                                            src="img/pda.jpg"
+                                        />
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-12">
+                        <div class="tile">
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <p class="title" id="website">Website</p>
+                                    <figure class="image is-4by3">
+                                        <img
+                                            class="modal-trigger"
+                                            data-target="project-4-modal"
+                                            src="img/jama.jpg"
+                                        />
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <p class="title" id="website1">Website</p>
+                                    <figure class="image is-4by3">
+                                        <img
+                                            class="modal-trigger"
+                                            data-target="project-5-modal"
+                                            src="img/mcarre.jpg"
+                                        />
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <p class="title" id="website2">Website</p>
+                                    <figure class="image is-4by3">
+                                        <img
+                                            class="modal-trigger"
+                                            data-target="project-6-modal"
+                                            src="img/sdtm.jpg"
+                                        />
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="title" id="education">Education</h1>
+                <hr />
+                <div class="card">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4" id="iset">
+                                Higher Institute of Technological Studies of
+                                Radès
+                            </p>
+                            <p class="subtitle is-6">
+                                <span id="license"
+                                    >Bachelor's degree in Mechatronics</span
+                                >
+                                - <time datetime="2017">2017</time> -
+                                <time datetime="2020">2020</time>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-gap">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="title is-4" id="lycee">
+                                High School of El Mourouj 6
+                            </p>
+                            <p class="subtitle is-6">
+                                <span id="bac"
+                                    >Technological baccalaureate</span
+                                >
+                                - <time datetime="2014">2014</time> -
+                                <time datetime="2017">2017</time>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Contact</h1>
+                <hr />
+                <nav class="level">
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <a
+                                href="https://github.com/MohamedHedi1998"
+                                class="icon is-large"
+                                target="_blank"
+                            >
+                                <i class="fab fa-2x fa-github"></i>
+                            </a>
+                            <p class="heading">
+                                <a
+                                    href="https://github.com/MohamedHedi1998"
+                                    target="_blank"
+                                    >github.com</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <a
+                                href="mailto:mohamed.hedi.ayadi@outlook.com"
+                                class="icon is-large"
+                            >
+                                <i class="fas fa-2x fa-envelope"></i>
+                            </a>
+                            <p class="heading">
+                                <a href="mailto:mohamed.hedi.ayadi@outlook.com"
+                                    >mohamed.hedi.ayadi@outlook.com</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <a
+                                href="https://www.linkedin.com/in/mohamed-hedi-ayadi/"
+                                class="icon is-large"
+                                target="_blank"
+                            >
+                                <i class="fab fa-2x fa-linkedin-in"></i>
+                            </a>
+                            <p class="heading">
+                                <a
+                                    href="https://www.linkedin.com/in/mohamed-hedi-ayadi/"
+                                    target="_blank"
+                                    >linkedin.com</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="project-1-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">
+                        Manufacturing Execution System
+                    </p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div id="project-1-modal-carousel" class="carousel">
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/project1.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes0.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes1.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes2.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes3.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes4.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes5.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes6.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes7.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes8.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes9.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes10.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes11.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mes12.jpg" />
+                        </figure>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            <span id="mes"
+                                >Our advanced Manufacturing Execution System
+                                (MES) is designed to enhance productivity and
+                                optimize the manufacturing process through
+                                real-time data integration. It continuously
+                                monitors machine performance, work, and stop
+                                times, automatically calculating and tracking
+                                Key Performance Indicators (KPIs), throughput,
+                                and downtime. The system maintains a detailed
+                                history of production activities, ensuring
+                                traceability and compliance, while providing
+                                predictive maintenance insights through machine
+                                performance analysis. The MES features three
+                                user interfaces: an admin interface for system
+                                configuration and detailed reporting, an
+                                operator interface for real-time monitoring and
+                                task management, and an Andon post interface for
+                                visual communication of production status and
+                                issues. This comprehensive MES solution ensures
+                                efficient and transparent manufacturing
+                                operations, empowering data-driven
+                                decision-making and fostering rapid response to
+                                production challenges.</span
+                            ><br /><a
+                                href="https://manufacturing-execution-system.onrender.com/"
+                                target="_blank"
+                                id="demo"
+                                >Live Demo</a
+                            >
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">Typscript</span>
+                            <span class="tag">ReactJS</span>
+                            <span class="tag">NextJS</span>
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">ExpressJS</span>
+                            <span class="tag">ElectronJS</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag" id="c1"
+                                >C Programming Language</span
+                            >
+                            <span class="tag">OPC UA</span>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" id="close1">Close</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="project-2-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title" id="andon1">Andon Post</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div id="project-2-modal-carousel" class="carousel">
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/andon.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/andon1.jpg" />
+                        </figure>
+                    </div>
+
+                    <div class="content">
+                        <p id="andon-para">
+                            The Andon post interface within our Manufacturing
+                            Execution System (MES) serves as a critical
+                            communication tool, providing immediate visual
+                            updates on production status and issues. It displays
+                            real-time information on machine performance,
+                            production progress, and any alarms or stoppages,
+                            enabling rapid identification and resolution of
+                            problems. This interface promotes transparency and
+                            teamwork by ensuring that all team members are aware
+                            of the current state of production. With its clear
+                            and visible alerts, the Andon post enhances
+                            responsiveness and helps maintain smooth and
+                            efficient operations, ultimately contributing to
+                            improved productivity and reduced downtime.
+                        </p>
+
+                        <div class="tags">
+                            <span class="tag">ReactNativeJS</span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">Typscript</span>
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">ExpressJS</span>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" id="close2">Close</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="project-3-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Personal Digital Assistant</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div id="project-3-modal-carousel" class="carousel">
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/pda.jpg" />
+                        </figure>
+                    </div>
+
+                    <div class="content">
+                        <p id="pda-para">
+                            The Personal Digital Assistant (PDA) plays a crucial
+                            role in our manufacturing operations by facilitating
+                            the efficient preparation of raw materials for
+                            fabrication orders. Integrated seamlessly with our
+                            production management system, the PDA enables
+                            operators to access detailed instructions and
+                            specifications directly on handheld devices.
+                            Operators can verify inventory levels, retrieve
+                            material specifications, and initiate material
+                            handling processes such as picking, packing, and
+                            staging. This mobile capability ensures that
+                            materials are prepared accurately and efficiently,
+                            reducing lead times and minimizing errors. By
+                            leveraging the PDA for material preparation, we
+                            enhance operational agility, streamline workflows,
+                            and maintain high standards of production efficiency
+                            and quality.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">ReactNativeJS</span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">Typscript</span>
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">ExpressJS</span>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" id="close3">Close</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="project-4-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title" id="jama">
+                        Jama E-Commerce Website
+                    </p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div id="project-4-modal-carousel" class="carousel">
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/jama.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/jama1.jpg" />
+                        </figure>
+                    </div>
+
+                    <div class="content">
+                        <div class="tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Wordpress</span>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" id="close4">Close</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="project-5-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title" id="mcarre">
+                        M-Carré Architecture Website
+                    </p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div id="project-5-modal-carousel" class="carousel">
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mcarre.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mc0.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mc1.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mc2.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mc3.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mc4.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/mc5.jpg" />
+                        </figure>
+                    </div>
+
+                    <div class="content">
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">ReactJS</span>
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">ExpressJS</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" id="close5">Close</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="project-6-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title" id="sdtm">SDTM Website</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div id="project-6-modal-carousel" class="carousel">
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/sdtm.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/sd1.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/sd2.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/sd3.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/sd4.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/sd5.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/sd6.jpg" />
+                        </figure>
+                        <figure class="image is-4by3 carousel-cell">
+                            <img src="img/sd7.jpg" />
+                        </figure>
+                    </div>
+
+                    <div class="content">
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">ReactJS</span>
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">ExpressJS</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" id="close6">Close</button>
+                </footer>
+            </div>
+        </div>
+
+        <footer class="footer"></footer>
+
+        <script src="js/bundle.js"></script>
+        <script>
+            setData();
+        </script>
+    </body>
+</html>
