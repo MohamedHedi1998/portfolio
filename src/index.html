@@ -209,6 +209,12 @@
                         "src",
                         "img/" + (lang == "en" ? "fr" : "en") + ".ico"
                     );
+                document
+                    .getElementById("cv-a")
+                    .setAttribute(
+                        "href",
+                        lang == "en" ? "docs/resume.pdf" : "docs/cv.pdf"
+                    );
             }
 
             function changeLanguage() {
@@ -295,6 +301,7 @@
                                     href="docs/resume.pdf"
                                     class="icon has-text-light"
                                     target="_blank"
+                                    id="cv-a"
                                 >
                                     <i class="fas fa-file-word"></i>
                                     <strong id="cv">Resume</strong>
